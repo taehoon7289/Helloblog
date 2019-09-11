@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <p>taehoon.kim</p>
+    <p>Copyright © 2019- TaeHoon.Kim. All right reserved.</p>
   </div>
 </template>
 

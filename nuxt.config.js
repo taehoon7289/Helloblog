@@ -45,7 +45,19 @@ module.exports = {
     '/prefix-url': 'proxy-url'    // proxy url
   },
   css: [
-    'assets/main.css'
-  ]
+    'assets/css/main.css'
+  ],
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/pro-regular-svg-icons',
+        icons: ['faAdjust']
+      },
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      },
+    ],
+  }
 }
 
