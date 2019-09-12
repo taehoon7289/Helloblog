@@ -36,7 +36,8 @@ module.exports = {
     }
   },
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-fontawesome'
   ],
   axios: {
     proxy: true     // proxy 사용
@@ -50,14 +51,13 @@ module.exports = {
   fontawesome: {
     imports: [
       {
-        set: '@fortawesome/pro-regular-svg-icons',
-        icons: ['faAdjust']
-      },
-      {
         set: '@fortawesome/free-solid-svg-icons',
         icons: ['fas']
       },
     ],
+  },
+  router: {
+    middleware: ['beforeEach']
   }
 }
 
