@@ -1,8 +1,5 @@
-export default function({ route, from, store, redirect }) {
-  // console.log(route)
-  // console.log(from)
-  // console.log(store)
-  // console.log(redirect)
+/* eslint-disable */
+export default ({ route, from, store, redirect }) => {
   if (store.state.header.isViewSidebar) {
     store.commit('header/toggle', true) // Navi 숨기기
   }

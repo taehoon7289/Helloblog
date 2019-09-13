@@ -9,11 +9,11 @@
       INTRO
     </nuxt-link>
     <nuxt-link tag="button" to="/post">
-      <font-awesome-icon icon="test" /><br>
+      <font-awesome-icon icon="edit" /><br>
       POST
     </nuxt-link>
     <nuxt-link tag="button" to="/yet">
-      <font-awesome-icon icon="" /><br>
+      <font-awesome-icon icon="edit" /><br>
       ??
     </nuxt-link>
   </div>
@@ -31,10 +31,11 @@
     padding: 0;
     border: 0;
     background-color: #EEEEEE;
-    width: 24%;
+    float: left;
+    width: 25%;
     height: 50px;
   }
-  .footer button:hover {
-    border: 0;
+  .footer button.nuxt-link-exact-active {
+    background-color: #DDDDDD;
   }
 </style>

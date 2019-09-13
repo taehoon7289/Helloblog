@@ -26,19 +26,19 @@
 </template>
 
 <script>
-  import { mapMutations } from 'vuex'
-  export default {
-    computed: {
-      isViewSidebar () {
-        return this.$store.state.header.isViewSidebar
-      }
-    },
-    methods: {
-      ...mapMutations({
-        toggle: 'header/toggle'
-      })
+import { mapMutations } from 'vuex'
+export default {
+  computed: {
+    isViewSidebar () {
+      return this.$store.state.header.isViewSidebar
     }
+  },
+  methods: {
+    ...mapMutations({
+      toggle: 'header/toggle'
+    })
   }
+}
 </script>
 
 <style>
